@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gastronomia do Nordeste - Cultura Nordeste</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">CN</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lendas.html">Lendas</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="festas.html">Festas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Gastronomia -->
+  <section class="hero" id="hero">
+    <h1>Gastronomia do Nordeste</h1>
+    <p>Sabores e aromas que revelam a riqueza cultural da culinária nordestina.</p>
+  </section>
+
+  <!-- Grid de Pratos -->
+  <section class="grid" id="pratos">
+    <div class="card">
+      <img src="assets/img/gastronomia/baiao.jpg" alt="Baião de Dois">
+      <h3>Baião de Dois</h3>
+      <p>Arroz e feijão cozidos juntos com queijo coalho e temperos regionais.<button class="btn-ghost" onclick="openModal('<h2>Baião de Dois</h2><p>Prato típico nordestino feito com arroz, feijão, queijo coalho, manteiga de garrafa e temperos locais. Tradicionalmente servido com carne seca ou linguiça.</p>')">Ver receita</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/gastronomia/acaraje.jpg" alt="Acarajé">
+      <h3>Acarajé</h3>
+      <p>Bolinhos fritos de feijão, recheados com vatapá e camarão.<button class="btn-ghost" onclick="openModal('<h2>Acarajé</h2><p>Bolinhos fritos feitos de feijão-fradinho, recheados com vatapá, caruru e camarão. Prato típico da Bahia e presença marcante nas festas de rua e religiões afro-brasileiras.</p>')">Ver receita</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/gastronomia/moqueca.jpg" alt="Moqueca de Peixe">
+      <h3>Moqueca de Peixe</h3>
+      <p>Peixe cozido com dendê, leite de coco e temperos regionais.<button class="btn-ghost" onclick="openModal('<h2>Moqueca de Peixe</h2><p>Prato tradicional da Bahia e Espírito Santo, feito com peixe fresco, azeite de dendê, leite de coco, pimentões e coentro. Um verdadeiro ícone da culinária nordestina.</p>')">Ver receita</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/gastronomia/sarapatel.jpg" alt="Sarapatel">
+      <h3>Sarapatel</h3>
+      <p>Ensopado de miúdos de porco, típico do interior.<button class="btn-ghost" onclick="openModal('<h2>Sarapatel</h2><p>Prato feito com miúdos de porco, temperos fortes e pimenta, típico do Nordeste rural. Geralmente servido com arroz branco e farinha de mandioca.</p>')">Ver receita</button></p>
+    </div>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-card">
+    <button onclick="closeModal()">Fechar</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Cultura Nordeste. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

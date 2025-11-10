@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Festas do Nordeste - Cultura Nordeste</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">CN</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lendas.html">Lendas</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="festas.html">Festas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Festas -->
+  <section class="hero" id="hero">
+    <h1>Festas Tradicionais do Nordeste</h1>
+    <p>Conheça as celebrações que expressam alegria, cultura e tradição nordestina.</p>
+  </section>
+
+  <!-- Grid de Festas -->
+  <section class="grid" id="festas-grid">
+    <div class="card">
+      <img src="assets/img/festas/saojoao.jpg" alt="São João de Caruaru">
+      <h3>São João de Caruaru</h3>
+      <p>Maior festa junina do Brasil.<button class="btn-ghost" onclick="openModal('<h2>São João de Caruaru</h2><p>O São João de Caruaru é uma festa tradicional cheia de quadrilhas, comidas típicas, fogueiras e shows. A celebração mantém vivas as tradições populares do Nordeste.</p>')">Saiba mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/festas/carnaval.jpg" alt="Carnaval de Salvador">
+      <h3>Carnaval de Salvador</h3>
+      <p>Celebrando música e folia.<button class="btn-ghost" onclick="openModal('<h2>Carnaval de Salvador</h2><p>O Carnaval de Salvador é famoso pelos trios elétricos, axé e blocos de rua. É uma das maiores manifestações culturais e musicais do país.</p>')">Saiba mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/festas/festa-do-bumba.jpg" alt="Festa do Bumba Meu Boi">
+      <h3>Bumba Meu Boi</h3>
+      <p>Festa folclórica com dança e música.<button class="btn-ghost" onclick="openModal('<h2>Bumba Meu Boi</h2><p>Tradição que mistura teatro, dança e música para contar a história do boi, celebrando a cultura popular e regional do Nordeste.</p>')">Saiba mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/festas/cirio.jpg" alt="Círio de Nazaré">
+      <h3>Círio de Nazaré</h3>
+      <p>Festa religiosa de fé e devoção.<button class="btn-ghost" onclick="openModal('<h2>Círio de Nazaré</h2><p>Evento religioso realizado em Belém, com procissões, missas e grande participação popular, mostrando a fé e tradição nordestina.</p>')">Saiba mais</button></p>
+    </div>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-card">
+    <button onclick="closeModal()">Fechar</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Cultura Nordeste. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

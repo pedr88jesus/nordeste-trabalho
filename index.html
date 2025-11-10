@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cultura Nordeste</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">CN</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#lendas">Lendas</a></li>
+        <li><a href="#gastronomia">Gastronomia</a></li>
+        <li><a href="#festas">Festas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <h1>Nordeste de Coração</h1>
+    <p>Descubra lendas, pratos típicos e festas que mantêm viva a cultura nordestina.</p>
+    <button class="btn btn-primary" onclick="document.getElementById('lendas').scrollIntoView({behavior:'smooth'})">Explorar Cultura</button>
+  </section>
+
+  <!-- Lendas -->
+  <section class="grid" id="lendas">
+    <div class="card">
+      <img src="assets/img/lendas/boitata.jpg" alt="Boi Tatá">
+      <h3>Boi Tatá</h3>
+      <p>Lenda do fogo que protege os campos do Nordeste.<button class="btn-ghost" onclick="openModal('<h2>Boi Tatá</h2><p>O Boi Tatá é uma lenda de fogo que vaga pelos campos, assustando quem não respeita a natureza...</p>')">Ler mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/lendas/cuca.jpg" alt="A Cuca">
+      <h3>A Cuca</h3>
+      <p>Figura lendária do folclore nordestino.<button class="btn-ghost" onclick="openModal('<h2>A Cuca</h2><p>A Cuca é uma bruxa do folclore, conhecida por pegar crianças que não obedecem seus pais...</p>')">Ler mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/lendas/mula.jpg" alt="Mula Sem Cabeça">
+      <h3>Mula Sem Cabeça</h3>
+      <p>História da mulher amaldiçoada que vira mula.<button class="btn-ghost" onclick="openModal('<h2>Mula Sem Cabeça</h2><p>Lenda da mulher que se transforma em mula sem cabeça como punição por atos impuros...</p>')">Ler mais</button></p>
+    </div>
+  </section>
+
+  <!-- Gastronomia -->
+  <section class="grid" id="gastronomia">
+    <div class="card">
+      <img src="assets/img/gastronomia/baiao.jpg" alt="Baião de Dois">
+      <h3>Baião de Dois</h3>
+      <p>Prato típico do Nordeste com arroz e feijão.<button class="btn-ghost" onclick="openModal('<h2>Baião de Dois</h2><p>Prato típico feito com arroz, feijão, queijo coalho e temperos regionais...</p>')">Ver receita</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/gastronomia/acaraje.jpg" alt="Acarajé">
+      <h3>Acarajé</h3>
+      <p>Bolinho frito de feijão, típico da Bahia.<button class="btn-ghost" onclick="openModal('<h2>Acarajé</h2><p>Bolinhos fritos recheados com vatapá e camarão, típico da Bahia...</p>')">Ver receita</button></p>
+    </div>
+  </section>
+
+  <!-- Festas -->
+  <section class="grid" id="festas">
+    <div class="card">
+      <img src="assets/img/festas/saojoao.jpg" alt="São João">
+      <h3>São João de Caruaru</h3>
+      <p>Festa tradicional com quadrilhas e comidas típicas.<button class="btn-ghost" onclick="openModal('<h2>São João de Caruaru</h2><p>Maior festa de São João do Brasil, com muita música, dança e gastronomia típica...</p>')">Saiba mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/festas/carnaval.jpg" alt="Carnaval">
+      <h3>Carnaval de Salvador</h3>
+      <p>Celebrando a alegria e a música baiana.<button class="btn-ghost" onclick="openModal('<h2>Carnaval de Salvador</h2><p>O famoso Carnaval de Salvador com trios elétricos, axé e muita animação...</p>')">Saiba mais</button></p>
+    </div>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-card">
+    <button onclick="closeModal()">Fechar</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Cultura Nordeste. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<

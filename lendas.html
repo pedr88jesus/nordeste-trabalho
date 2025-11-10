@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lendas do Nordeste - Cultura Nordeste</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">CN</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lendas.html">Lendas</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="festas.html">Festas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Lendas -->
+  <section class="hero" id="hero">
+    <h1>Lendas do Nordeste</h1>
+    <p>Descubra histórias lendárias que atravessam gerações e encantam o Nordeste.</p>
+  </section>
+
+  <!-- Grid de Lendas -->
+  <section class="grid" id="lendas-grid">
+    <div class="card">
+      <img src="assets/img/lendas/boitata.jpg" alt="Boi Tatá">
+      <h3>Boi Tatá</h3>
+      <p>Lenda do fogo que protege os campos do Nordeste.<button class="btn-ghost" onclick="openModal('<h2>Boi Tatá</h2><p>O Boi Tatá é um fogo que percorre os campos, protegendo ou punindo aqueles que desrespeitam a natureza. Uma história que mistura temor e fascínio, presente em várias regiões do Nordeste.</p>')">Ler mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/lendas/cuca.jpg" alt="A Cuca">
+      <h3>A Cuca</h3>
+      <p>Figura lendária do folclore nordestino.<button class="btn-ghost" onclick="openModal('<h2>A Cuca</h2><p>A Cuca é a bruxa do folclore que captura crianças desobedientes. Sua história é contada em contos de ninar e festas populares, lembrando a importância da disciplina e do respeito.</p>')">Ler mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/lendas/mula.jpg" alt="Mula Sem Cabeça">
+      <h3>Mula Sem Cabeça</h3>
+      <p>História da mulher amaldiçoada que vira mula.<button class="btn-ghost" onclick="openModal('<h2>Mula Sem Cabeça</h2><p>A Mula Sem Cabeça é a lenda da mulher que se transforma em uma mula sem cabeça como punição por romances proibidos ou atitudes impuras. Uma história de mistério e moralidade popular.</p>')">Ler mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/lendas/cabra.jpg" alt="Cabra Cabriola">
+      <h3>Cabra Cabriola</h3>
+      <p>Lenda das matas nordestinas.<button class="btn-ghost" onclick="openModal('<h2>Cabra Cabriola</h2><p>A Cabra Cabriola é uma figura travessa que engana viajantes nas trilhas e matas do sertão, mostrando a criatividade do folclore regional em criar mitos que explicam fenômenos estranhos.</p>')">Ler mais</button></p>
+    </div>
+    <div class="card">
+      <img src="assets/img/lendas/negrinho.jpg" alt="Negrinho do Pastoreio">
+      <h3>Negrinho do Pastoreio</h3>
+      <p>Lenda sobre fé e justiça.<button class="btn-ghost" onclick="openModal('<h2>Negrinho do Pastoreio</h2><p>Negrinho do Pastoreio é uma história sobre um menino escravizado injustamente que recebe ajuda divina para encontrar objetos perdidos, simbolizando fé, justiça e esperança.</p>')">Ler mais</button></p>
+    </div>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-card">
+    <button onclick="closeModal()">Fechar</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Cultura Nordeste. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -6,18 +6,19 @@
 <title>Cultura Nordeste</title>
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 </head>
 <body>
 
 <header>
   <div class="container">
-    <div class="logo">CN</div>
+    <div class="logo">Cultura Nordeste</div>
     <nav>
       <ul>
         <li><a href="#hero">Home</a></li>
-        <li><a href="#lendas">Lendas</a></li>
-        <li><a href="#gastronomia">Gastronomia</a></li>
-        <li><a href="#festas">Festas</a></li>
+        <li><a href="lendas.html">Lendas</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="festas.html">Festas</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
@@ -26,58 +27,62 @@
 
 <main>
   <!-- Hero -->
-  <section class="hero" id="hero">
-    <h1>Nordeste de Coração</h1>
-    <p>Descubra lendas, pratos típicos e festas que mantêm viva a cultura nordestina.</p>
+  <section class="hero" id="hero" style="background: linear-gradient(180deg, #1c1c1c 0%, #2b2b2b 100%); padding:80px 20px; text-align:center;" data-aos="fade-in">
+    <h1 style="font-family:'Poppins',sans-serif; font-size:48px; color:#ffb547;">Nordeste de Coração</h1>
+    <p style="color:#e0e0e0; max-width:700px; margin:16px auto;">Explore lendas, pratos típicos e festas que revelam a riqueza cultural do Nordeste.</p>
     <button class="btn btn-primary" onclick="document.getElementById('lendas').scrollIntoView({behavior:'smooth'})">Explorar Cultura</button>
   </section>
 
   <!-- Lendas -->
-  <section class="grid" id="lendas">
-    <div class="card">
+  <section class="grid" id="lendas" data-aos="fade-up">
+    <h2 style="text-align:center; color:#ff6b35; margin-bottom:24px;">Lendas do Nordeste</h2>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
       <img src="assets/img/lendas/boitata.jpg" alt="Boi Tatá">
       <h3>Boi Tatá</h3>
-      <p>Lenda do fogo que protege os campos do Nordeste.<button class="btn-ghost" onclick="openModal('<h2>Boi Tatá</h2><p>O Boi Tatá é uma lenda de fogo que vaga pelos campos, assustando quem não respeita a natureza...</p>')">Ler mais</button></p>
+      <p>Lenda do fogo que protege os campos.<button class="btn-ghost" onclick="openModal('<h2>Boi Tatá</h2><p>O Boi Tatá é um fogo que percorre os campos, protegendo ou punindo aqueles que desrespeitam a natureza...</p>')">Ler mais</button></p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
       <img src="assets/img/lendas/cuca.jpg" alt="A Cuca">
       <h3>A Cuca</h3>
-      <p>Figura lendária do folclore nordestino.<button class="btn-ghost" onclick="openModal('<h2>A Cuca</h2><p>A Cuca é uma bruxa do folclore, conhecida por pegar crianças que não obedecem seus pais...</p>')">Ler mais</button></p>
+      <p>Bruxa do folclore nordestino.<button class="btn-ghost" onclick="openModal('<h2>A Cuca</h2><p>A Cuca captura crianças desobedientes. Sua história é contada em contos e festas populares...</p>')">Ler mais</button></p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
       <img src="assets/img/lendas/mula.jpg" alt="Mula Sem Cabeça">
       <h3>Mula Sem Cabeça</h3>
-      <p>História da mulher amaldiçoada que vira mula.<button class="btn-ghost" onclick="openModal('<h2>Mula Sem Cabeça</h2><p>Lenda da mulher que se transforma em mula sem cabeça como punição por atos impuros...</p>')">Ler mais</button></p>
+      <p>Mulher amaldiçoada que vira mula.<button class="btn-ghost" onclick="openModal('<h2>Mula Sem Cabeça</h2><p>A lenda conta a mulher que se transforma em uma mula sem cabeça como punição por atos impuros...</p>')">Ler mais</button></p>
     </div>
   </section>
 
   <!-- Gastronomia -->
-  <section class="grid" id="gastronomia">
-    <div class="card">
+  <section class="grid" id="gastronomia" data-aos="fade-up">
+    <h2 style="text-align:center; color:#ff6b35; margin-bottom:24px;">Gastronomia</h2>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
       <img src="assets/img/gastronomia/baiao.jpg" alt="Baião de Dois">
       <h3>Baião de Dois</h3>
-      <p>Prato típico do Nordeste com arroz e feijão.<button class="btn-ghost" onclick="openModal('<h2>Baião de Dois</h2><p>Prato típico feito com arroz, feijão, queijo coalho e temperos regionais...</p>')">Ver receita</button></p>
+      <p>Arroz e feijão com queijo coalho.<button class="btn-ghost" onclick="openModal('<h2>Baião de Dois</h2><p>Prato típico nordestino feito com arroz, feijão, queijo coalho, manteiga de garrafa e temperos locais...</p>')">Ver receita</button></p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
       <img src="assets/img/gastronomia/acaraje.jpg" alt="Acarajé">
       <h3>Acarajé</h3>
-      <p>Bolinho frito de feijão, típico da Bahia.<button class="btn-ghost" onclick="openModal('<h2>Acarajé</h2><p>Bolinhos fritos recheados com vatapá e camarão, típico da Bahia...</p>')">Ver receita</button></p>
+      <p>Bolinhos fritos de feijão.<button class="btn-ghost" onclick="openModal('<h2>Acarajé</h2><p>Bolinhos de feijão-fradinho recheados com vatapá e camarão, típicos da Bahia...</p>')">Ver receita</button></p>
     </div>
   </section>
 
   <!-- Festas -->
-  <section class="grid" id="festas">
-    <div class="card">
+  <section class="grid" id="festas" data-aos="fade-up">
+    <h2 style="text-align:center; color:#ff6b35; margin-bottom:24px;">Festas Tradicionais</h2>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
       <img src="assets/img/festas/saojoao.jpg" alt="São João">
       <h3>São João de Caruaru</h3>
-      <p>Festa tradicional com quadrilhas e comidas típicas.<button class="btn-ghost" onclick="openModal('<h2>São João de Caruaru</h2><p>Maior festa de São João do Brasil, com muita música, dança e gastronomia típica...</p>')">Saiba mais</button></p>
+      <p>Maior festa junina do Brasil.<button class="btn-ghost" onclick="openModal('<h2>São João de Caruaru</h2><p>Quadrilhas, comidas típicas e shows. Mantém vivas as tradições populares do Nordeste...</p>')">Saiba mais</button></p>
     </div>
-    <div class="card">
-      <img src="assets/img/festas/carnaval.jpg" alt="Carnaval">
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <img src="assets/img/festas/carnaval.jpg" alt="Carnaval de Salvador">
       <h3>Carnaval de Salvador</h3>
-      <p>Celebrando a alegria e a música baiana.<button class="btn-ghost" onclick="openModal('<h2>Carnaval de Salvador</h2><p>O famoso Carnaval de Salvador com trios elétricos, axé e muita animação...</p>')">Saiba mais</button></p>
+      <p>Celebrando música e folia.<button class="btn-ghost" onclick="openModal('<h2>Carnaval de Salvador</h2><p>Trio elétrico, axé e blocos de rua. Um ícone cultural do Nordeste...</p>')">Saiba mais</button></p>
     </div>
   </section>
+
 </main>
 
 <!-- Modal -->
@@ -88,10 +93,20 @@
   </div>
 </div>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Cultura Nordeste. Todos os direitos reservados.</p>
-  </div>
+<!-- Player de música -->
+<audio controls autoplay loop style="position:fixed;bottom:20px;right:20px;z-index:50;">
+  <source src="assets/audio/nordeste.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+
+<footer style="background:#111; color:#888; padding:40px 20px; text-align:center;">
+  &copy; 2025 Cultura Nordeste. Todos os direitos reservados.
 </footer>
 
-<
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/script.js"></script>
+<script>
+  AOS.init({duration:800,once:true});
+</script>
+</body>
+</html>

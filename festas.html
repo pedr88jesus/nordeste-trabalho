@@ -6,12 +6,13 @@
 <title>Festas do Nordeste - Cultura Nordeste</title>
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 </head>
 <body>
 
 <header>
   <div class="container">
-    <div class="logo">CN</div>
+    <div class="logo">Cultura Nordeste</div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -26,32 +27,32 @@
 
 <main>
   <!-- Hero Festas -->
-  <section class="hero" id="hero">
-    <h1>Festas Tradicionais do Nordeste</h1>
-    <p>Conheça as celebrações que expressam alegria, cultura e tradição nordestina.</p>
+  <section class="hero" id="hero" style="background: linear-gradient(180deg, #1c1c1c 0%, #2b2b2b 100%); padding:80px 20px; text-align:center;" data-aos="fade-in">
+    <h1 style="font-family:'Poppins',sans-serif; font-size:48px; color:#ffb547;">Festas Tradicionais do Nordeste</h1>
+    <p style="color:#e0e0e0; max-width:700px; margin:16px auto;">Celebrações que expressam alegria, cultura e tradição nordestina.</p>
   </section>
 
   <!-- Grid de Festas -->
-  <section class="grid" id="festas-grid">
-    <div class="card">
+  <section class="grid" id="festas-grid" data-aos="fade-up">
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
       <img src="assets/img/festas/saojoao.jpg" alt="São João de Caruaru">
       <h3>São João de Caruaru</h3>
-      <p>Maior festa junina do Brasil.<button class="btn-ghost" onclick="openModal('<h2>São João de Caruaru</h2><p>O São João de Caruaru é uma festa tradicional cheia de quadrilhas, comidas típicas, fogueiras e shows. A celebração mantém vivas as tradições populares do Nordeste.</p>')">Saiba mais</button></p>
+      <p>Maior festa junina do Brasil.<button class="btn-ghost" onclick="openModal('<h2>São João de Caruaru</h2><p>O São João de Caruaru é uma festa tradicional cheia de quadrilhas, comidas típicas, fogueiras e shows...</p>')">Saiba mais</button></p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
       <img src="assets/img/festas/carnaval.jpg" alt="Carnaval de Salvador">
       <h3>Carnaval de Salvador</h3>
-      <p>Celebrando música e folia.<button class="btn-ghost" onclick="openModal('<h2>Carnaval de Salvador</h2><p>O Carnaval de Salvador é famoso pelos trios elétricos, axé e blocos de rua. É uma das maiores manifestações culturais e musicais do país.</p>')">Saiba mais</button></p>
+      <p>Celebrando música e folia.<button class="btn-ghost" onclick="openModal('<h2>Carnaval de Salvador</h2><p>O Carnaval de Salvador é famoso pelos trios elétricos, axé e blocos de rua...</p>')">Saiba mais</button></p>
     </div>
-    <div class="card">
-      <img src="assets/img/festas/festa-do-bumba.jpg" alt="Festa do Bumba Meu Boi">
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <img src="assets/img/festas/bumba.jpg" alt="Bumba Meu Boi">
       <h3>Bumba Meu Boi</h3>
-      <p>Festa folclórica com dança e música.<button class="btn-ghost" onclick="openModal('<h2>Bumba Meu Boi</h2><p>Tradição que mistura teatro, dança e música para contar a história do boi, celebrando a cultura popular e regional do Nordeste.</p>')">Saiba mais</button></p>
+      <p>Festa folclórica com dança e música.<button class="btn-ghost" onclick="openModal('<h2>Bumba Meu Boi</h2><p>Tradição que mistura teatro, dança e música para contar a história do boi...</p>')">Saiba mais</button></p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-delay="400">
       <img src="assets/img/festas/cirio.jpg" alt="Círio de Nazaré">
       <h3>Círio de Nazaré</h3>
-      <p>Festa religiosa de fé e devoção.<button class="btn-ghost" onclick="openModal('<h2>Círio de Nazaré</h2><p>Evento religioso realizado em Belém, com procissões, missas e grande participação popular, mostrando a fé e tradição nordestina.</p>')">Saiba mais</button></p>
+      <p>Festa religiosa de fé e devoção.<button class="btn-ghost" onclick="openModal('<h2>Círio de Nazaré</h2><p>Evento religioso realizado em Belém, com procissões e grande participação popular...</p>')">Saiba mais</button></p>
     </div>
   </section>
 </main>
@@ -64,12 +65,20 @@
   </div>
 </div>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Cultura Nordeste. Todos os direitos reservados.</p>
-  </div>
+<!-- Player de música -->
+<audio controls autoplay loop style="position:fixed;bottom:20px;right:20px;z-index:50;">
+  <source src="assets/audio/nordeste.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+
+<footer style="background:#111; color:#888; padding:40px 20px; text-align:center;">
+  &copy; 2025 Cultura Nordeste. Todos os direitos reservados.
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="js/script.js"></script>
+<script>
+  AOS.init({duration:800,once:true});
+</script>
 </body>
 </html>
